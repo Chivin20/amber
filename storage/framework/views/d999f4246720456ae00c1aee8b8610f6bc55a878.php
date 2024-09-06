@@ -29,7 +29,7 @@ Bootstrap 4 breakpoints
   
   }
    
-  /* Medium devices (landscape ph, 768px and up) The navbar toggle appears at this breakpoint */
+  /* Medium devices (landscape ph, 468px and up) The navbar toggle appears at this breakpoint */
   @media (min-width: 468px) {  
       #banner{
         width: 100%; 
@@ -178,12 +178,13 @@ Bootstrap 4 breakpoints
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="col-12" id="banner" style="background-image:linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 2)), url('../assets/img/logo1.jpg');">
+                        <div class="col-12" id="banner" style="background-image:linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 1)), url('../assets/img/s1.jpg');">
                             <div class="row">
                                  <div class="col-12">
                                      <div id="banner_left" class = "scrolling-text"> 
                          <p  style="color:white; font-family: sans-seriff;  font-style:opaque; font-weight:Bold;"> 
-                         <b>WELCOME TO OZARAMBA FOUNDATION:</b> <br> WHERE WE PUT COMPASSION INTO ACTION </p>
+                         <b>WELCOME TO AMBER AND DUQUAYS FOUNDATION:</b> <br> Committed to Uplifting, Motivating and Empowering 
+                         Lives </p>
                                     </div>
                                </div>
                            </div>
@@ -192,12 +193,12 @@ Bootstrap 4 breakpoints
 
                     <div class="carousel-item ">
                    
-                        <div class="col-12" id="banner" style="background-image:linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.9)),url('../assets/img/s1.jpg');"> 
+                        <div class="col-12" id="banner" style="background-image:linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.9)),url('../assets/img/s2.jpg');"> 
                             <div class="row">
                                 <div class="col-12">
                                     <div id="banner_left" class = "scrolling-text">
                         <p style="color:white; font-family: sans-serriff;  font-style:opaque;">
-                           <b> Hosting of Ozaramba Unity Cup</b> 
+                           <b> Free Medical Outreach</b> 
                         </p>
                         <!--<p style="color:white;"> <b>We are solving the problem of isolation and <br>
                         lack of support in professional development</b></p> -->
@@ -210,30 +211,12 @@ Bootstrap 4 breakpoints
 
                <div class="carousel-item ">
                    
-                   <div class="col-12" id="banner" style="background-image:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.8)),url('../assets/img/s2.jpg');"> 
+                   <div class="col-12" id="banner" style="background-image:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.8)),url('../assets/img/s3.jpg');"> 
                        <div class="row">
                            <div class="col-8">
                            <div id="banner_left" class = "scrolling-text">
                    <p style="color:white; font-family: sans-serriff;  font-style:opaque;">
-                      <b> Ozaramba Football Team </b> 
-                   </p>
-                   <!--<p style="color:white;"> <b>We are solving the problem of isolation and <br>
-                   lack of support in professional development</b></p> -->
-                   
-                               </div>
-                           </div>
-                       </div>
-                   </div>
-               </div>
-
-               <div class="carousel-item ">
-                   
-                   <div class="col-12" id="banner" style="background-image:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.8)),url('../assets/img/s3.jpg');"> 
-                       <div class="row">
-                           <div class="col-12">
-                               <div id="banner_left" class = "scrolling-text">
-                   <p style="color:white; font-family: sans-serriff;  font-style:opaque;">
-                      <b> Chief Dr. Epiphanis Nnemeka "Ozaramba 1 of Nsu" advising his team</b> 
+                      <b> Free Medical Consultation </b> 
                    </p>
                    <!--<p style="color:white;"> <b>We are solving the problem of isolation and <br>
                    lack of support in professional development</b></p> -->
@@ -249,9 +232,27 @@ Bootstrap 4 breakpoints
                    <div class="col-12" id="banner" style="background-image:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.8)),url('../assets/img/s4.jpg');"> 
                        <div class="row">
                            <div class="col-12">
+                               <div id="banner_left" class = "scrolling-text">
+                   <p style="color:white; font-family: sans-serriff;  font-style:opaque;">
+                      <b> Free Blood Pressure Test</b> 
+                   </p>
+                   <!--<p style="color:white;"> <b>We are solving the problem of isolation and <br>
+                   lack of support in professional development</b></p> -->
+                   
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+
+               <div class="carousel-item ">
+                   
+                   <div class="col-12" id="banner" style="background-image:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.8)),url('../assets/img/s5.jpg');"> 
+                       <div class="row">
+                           <div class="col-12">
                            <div id="banner_left" class = "scrolling-text">
                  <p style="color:white; font-family: sans-serriff;  font-style:opaque;">
-                      <b> The Management Team of Ozaramba Football Club</b> 
+                      <b> Free Malaria Parasite Test</b> 
                    </p>
                     <!-- <p style="color:white;"> <b>We are solving the problem of isolation and <br>
                    lack of support in professional development</b></p> -->
@@ -283,23 +284,23 @@ Bootstrap 4 breakpoints
             <div class="row">
                 <div class="col-sm-12 col-md-6"  style=" margin-top: 50px;">
                 <div class = "section">
-                   <img class="rounded img-fluid float-end" id = "banner" src="<?php echo e(url('/assets/img/logo2.jpg')); ?>" width="800px"/>
+                   <img class="rounded img-fluid float-end" id = "banner" src="<?php echo e(url('/assets/img/aboutus.jpg')); ?>" width="800px"/>
                 </div>
                 </div>
 
                 <div class="col-sm-12 col-md-6" style="margin-top: 50px;border-left: 5px solid; border-left-color:cyan;">
                     <div style="padding-left: 15px; padding-right: 10px; font-size:18px">
                     <div class = "section">      
-                        <h1 class = "text-primary" style="text-align:center;"><b>About Ozaramba Foundation</b></h1>
+                        <h1 class = "text-primary" style="text-align:center;"><b>About Amber & Duquays Foundation</b></h1>
                         <p style="text-align: justify; font-family: 'Quicksand', sans-serif; line-height: 1.60;">
-                        Ozaramba Foundation is a Non-Profit, Non-Governmental Organization (NGO) committed to assisting, 
-                        supporting and empowering Children, Women, Youths with Special Needs and other Vulnerable 
-                        Individuals and was founded by Chief Dr. Epiphanis Nnemeka (Ozaramba 1 of Nsu) & Lolo Stella Iregbu.
+                        The Amber and Duqays Foundation is a non-profit organisation, which was founded by Chief. Dr Ndukwo Bassey Kalu 
+                        and his wife Amber Lea Kalu. It is a leading Community and Human Oriented Non-Profit Organisation 
+                        committed to the Social and Economic Welfare of the Less Privileged in Developing Nations. 
                         <br> <br>
-                        The Foundation aims to improve lives in meaningful ways through Scholarships, construction of 
-                        boreholes in rural communities to give rural dwellers access to clean, safe and portable drinking 
-                        water, donating food supplies to the poor and vulnerable and supporting start-up with business 
-                        capital.
+                        The Foundation provides basic human needs such as food, clean and safe drinking water, 
+                        and medical assistance to improve the lives of Children, Individuals and Families including 
+                        supporting their education, skills and job training to cross the bridge from basic human needs 
+                        to Independence and self-sufficiency. 
                         </p>
                         <button  class="btn btn-danger rounded-pill d-none d-md-block"><a href="/aboutus" class = "hov">
                         <b>Read more</b></a></button>
@@ -320,12 +321,13 @@ Bootstrap 4 breakpoints
     <div class="container-fluid" >
     <div class = "section">
         <div class="col-12" style = "margin-top:50px;">
-            <h1 class = "text-warning" style = "text-align:center; color: darkblue;" ><b>Objectives of Ozaramba Foundation</b></h1> 
+            <h1 class = "text-warning" style = "text-align:center; color: darkblue;" ><b>Objectives of Amber & Duquays Foundation</b></h1> 
 
             <h5 style="text-align: center; color:white; font-family: 'Quicksand', sans-serif; padding-left:70px; 
             padding-right:70px; margin-bottom:70px; line-height: 1.60;">
-            To reduce poverty and illness. <br> To support and empower the most vulnerable. <br>To give rural dwellers 
-            access to clean and portable drinking water. <br>To support and encourage business start-ups. </h5>
+            To provide basic human needs such as food, clean and safe drinking water, and medical assistance to improve the lives of Children, 
+            Individuals and Families including supporting their education, skills and job training to cross the bridge from 
+            basic human needs to Independence and self-sufficiency </h5>
 
         </div>
     </div>
@@ -356,12 +358,12 @@ Bootstrap 4 breakpoints
                     <div class="text-center" style="padding-left: 40px; padding-right: 20px;">
                         <h1 class = "text-primary"><b>Our Mission</b> </h1>
                         <h5 style="text-align: justify; font-family: 'Quicksand', sans-serif; line-height: 1.60;">
-                        To improve lives in meaningful ways through Scholarships, construction of boreholes in 
-                        rural communities to give rural dwellers access to clean, safe and portable drinking water, 
-                        donating food supplies to the poor and vulnerable and supporting start-up with business capital.
+                        To promote and protect the dignity of those who seek our support and intervention. To work 
+                        with highly motivated staff who serves with compassion and empathy in assisting and supporting people 
+                        in need to improve their lives. 
                         <br>
-                        To turn vulnerability into strength. To show Love and Empathy inorder to restore 
-                        the dignity of Human Race
+                        To provide and offer essential community resources and leadership to support Children, Individuals 
+                        and Families in time of needs, emergencies and crisis.
                         </h5>
                     </div>
                 </div>
@@ -403,12 +405,11 @@ Bootstrap 4 breakpoints
                     <div style="padding-left: 40px; padding-right: 20px;">
                         <h2 class = "text-primary" style="font-family: 'Quicksand', sans-serif;"><b>Our Event</b></h2>
                         <h5 style="text-align: justify; font-family: 'Quicksand', sans-serif; line-height: 1.60;">
-                        December 27th of each year  marks the annual celebration of the fundraising event for 
-                        Ozaramba Foundation through Ozaramba Foundation Unity Cup finale for both male and female 
-                        soccer teams. In the last five years, Ozaramba Foundation has supported and empowered 
-                        vulnerable individuals to meet their basic needs. 
+                        On 28th July 2024 The Redeemed Chritian Church of God in conjunction with Amber & Duquays 
+                        Foundation held a free medical outreach where people received free medical consultation, 
+                        free blood pressure test, free blood group test, free malaria parasite test and much more. 
                         <br><br />
-                        The Management of Ozaramba Foundation 
+                        The Management of Amber & Duquays Foundation
                         calls on everyone to join hands with the Foundation in building equitable and 
                         sustainable communities on the principles of Love and Empathy for the human race. 
                         The Foundation is thankful to their donors who have continued to support their efforts in 
@@ -456,29 +457,27 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 15)),url('../
                     <div class="carousel-item active">
                         <!-- <img class="rounded-circle" width="120px" height="120px" src="../assets/img/v62_5996.png" alt="..."> -->
                         <h5 style="margin-left: 10%; margin-right: 10%; font-family: 'Quicksand', sans-serif;">
-                           Ozaramba foundation has been able to provide food for the needy in the community as well as supporting
-                           small scale businesses with capitals to boost their businesses. <br>
-                           The foundation has also helped youths by organizing and hosting unity cups in order to keep the youths
-                           off the street.
+                        Amber & Duquays Foundation has been able to provide food for the needy in the community as well as supporting
+                           small scale businesses with capitals to boost their businesses.
                         </h5>
-                        <h4>MRS NWOKO CHINYERE</h4>
+                        <h4>MRS OKOYE CHINYERE</h4>
                         
                     </div>
 
                     <div class="carousel-item">
                         
                         <h5 style="margin-left: 10%; margin-right: 10%; font-family: 'Quicksand', sans-serif;">
-                            Ozaramba Foundation as a Non-Governmental Organization (NGO) with liited resources and with 
+                        Amber & Duquays Foundation as a Non-Governmental Organization (NGO) with liited resources and with 
                             a genuine purpose of improving the living standard of the less priviledged
                             children by giving them shelter, food, healthy conditions, education etc. 
                         </h5>
-                        <h4>DR. MRS. UDEANYA OGECHI</h4>
+                        <h4>DR. MRS. UDEANYA CHIKA</h4>
                     </div>
 
                     <div class="carousel-item">
                         <!-- <img class="rounded-circle" width="120px" height="120px" src="../assets/img/v62_5996.png" alt="..."> -->
                         <h5 style="margin-left: 10%; margin-right: 10%; font-family: 'Quicksand', sans-serif;">
-                            Ozaramba Foundation has helped in supporting destitute elderly women by giving them food
+                        Amber & Duquays Foundation has helped in supporting destitute elderly women by giving them food
                             every day and instilling a hope in them that they too are wanted. <br> struggling women with a lot of
                             responsibilities have an avenue to work and earn with dignity through tailoring centers and other
                             businesses.                       
@@ -489,9 +488,9 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 15)),url('../
                     <div class="carousel-item">
                         <!-- <img class="rounded-circle" width="120px" height="120px" src="../assets/img/v62_5996.png" alt="..."> -->
                         <h5 style="margin-left: 10%; margin-right: 10%; font-family: 'Quicksand', sans-serif;">
-                        Chief Dr. Epiphanis Nnemeka (Ozaramba 1 of Nsu) & Lolo Stella Iregbu through Ozaramba Foundation is 
-                        carrying out for so many years with immense hard work, dedication, perseverance and with a vision to
-                        support and uplift the economically and socially deprived people. 
+                        The Foundation has helped to provides basic human needs such as food, clean and safe drinking water, and 
+                        medical assistance inorder to improve the lives of Children, Individuals and Families including supporting their education, skills and 
+                        job training to cross the bridge from basic human needs to Independence and self-sufficiency.  
                         </h5>
                         <h4>DR OGUOMA OKECHUKWU</h4>
                     </div>
@@ -537,7 +536,7 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 15)),url('../
                         <img class="rounded img-fluid mx-auto image" id = "banner" src="../assets/img/founder.jpg" width="300px" />
                         <div class="middle">
                             <div class="text rounded">
-                            Chief Dr. Epiphanis Nneemeka & Lolo Stella Iregbu
+                            Chief. Dr Ndukwo Bassey Kalu and his wife Amber Lea Kalu
                                 <p>Founder</p>
                             </div>
                             
@@ -548,7 +547,7 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 15)),url('../
                 <div class="col-sm-12 col-md-7" style="margin-top: 30px;border-left: 5px solid; border-left-color:cyan;">
                     <div style="padding-left: 40px; padding-right: 10px; font-size: 18px;">
                         
-                        <h2 class = "text-primary" style = "font-weight: Bold;">Ozaramba Foundation</h2>
+                        <h2 class = "text-primary" style = "font-weight: Bold;">Amber & Duquays Foundation </h2>
                         <h5 style="text-align: justify; font-family: 'Quicksand', sans-serif; line-height:1.60;">
                         There is no doubt that the successes recorded by any organization are eloquent testimonies of the high degree of commitment and 
                         tenacity of the purpose of its staff and evidence of the administrative know-how of its managers in actualizing the goals and aspirations of 
@@ -577,7 +576,7 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 15)),url('../
 
                     <div class="card" id = "arrange">
                         
-                            <img class="rounded img-fluid mx-auto image" style="height:195px ; width:200px;" src="../assets/img/romanus.jpg" />
+                            <img class="rounded img-fluid mx-auto image" style="height:195px ; width:200px;" src="../assets/img/nneka.jpg" />
                             <div class="middle">
                                 <div class="text rounded">
                                     <p>Admin Manager</p>
@@ -586,7 +585,7 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 15)),url('../
                             </div>
                     
                         <div class="card-body text-center">
-                            <h5 class="card-title"> <b> Mr. Romanus Chukwudi Nwokorie </b> </h5>
+                            <h5 class="card-title"> <b> Mrs. Treasure Nneka </b> </h5>
                           </div>
                     </div>
                 </div>
@@ -595,16 +594,16 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 15)),url('../
 
                     <div class="card" id = "arrange">
                         
-                            <img class="rounded img-fluid mx-auto image" style="height:195px ; width:200px;" src="../assets/img/ogechi.jpg" />
+                            <img class="rounded img-fluid mx-auto image" style="height:195px ; width:200px;" src="../assets/img/chuks.jpg" />
                             <div class="middle">
                                 <div class="text rounded">
-                                    <p>Secretary</p>
+                                    <p>Admin Officer</p>
                                 </div>
                                 
                             </div>
                     
                         <div class="card-body text-center">
-                            <h5 class="card-title"> <b> Ogechi Ofoma Chile </b> </h5>
+                            <h5 class="card-title"> <b> Mr. Chuks </b> </h5>
                           </div>
                     </div>
                 </div>
@@ -634,7 +633,7 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 15)),url('../
 
                     <div class="card" id = "arrange">
                         
-                            <img class="rounded img-fluid mx-auto image" style="height:195px ; width:200px;" src="../assets/img/sarah.jpg" />
+                            <img class="rounded img-fluid mx-auto image" style="height:195px ; width:200px;" src="../assets/img/uche.jpg" />
                             <div class="middle">
                                 <div class="text rounded">
                                     
@@ -644,7 +643,7 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 15)),url('../
                             </div>
                     
                         <div class="card-body text-center">
-                            <h5 class="card-title"> <b> Sarah Ndukwo Ojebe </b> </h5>
+                            <h5 class="card-title"> <b> Uche Maximus </b> </h5>
                           </div>
                     </div>
                 </div>
@@ -661,4 +660,4 @@ background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 15)),url('../
 <?php $__env->stopSection(); ?>
 
 
-<?php echo $__env->make('layout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\Users\user\Documents\websites\ozaramba\resources\views/home.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('layout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\Users\user\Documents\websites\amber\resources\views\home.blade.php ENDPATH**/ ?>

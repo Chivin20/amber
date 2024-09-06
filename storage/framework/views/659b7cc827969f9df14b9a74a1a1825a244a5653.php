@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ozaramba Foundation </title>
+    <title>Amber & Duquays Foundation  </title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" >
 
   <!-- Vendor CSS Files -->
-  <link href="assets/aos/aos.css" rel="stylesheet">
-  <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/frame/aos/aos.css" rel="stylesheet">
+  <link href="assets/frame/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/frame/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/frame/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/frame/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/frame/swiper/swiper-bundle.min.css" rel="stylesheet">
   
 
     <style>
@@ -95,7 +95,7 @@
 <!-- nav ber -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/"><img src="<?php echo e(url('/assets/img/logo.jpg')); ?>" height="80px" width="80px" alt="logo"></a>
+      <a class="navbar-brand" href="/"><img src="<?php echo e(url('/assets/img/logo1.jpg')); ?>" height="80px" width="80px" alt="logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -166,7 +166,7 @@
         <div class="col-md-6 mt-md-0 mt-3">
   
           <!-- Content -->
-          <h5 class="text-uppercase"> <b>Ozaramba Foundation</b></h5>
+          <h5 class="text-uppercase"> <b>Amber & Duquays Foundation</b></h5>
           <div class="wrapingimage">   
             <img src="<?php echo e(url('/assets/img/logo.jpg')); ?>" height="80px" width="80px" alt="logo" style = "padding-right:10px;">    
             </div>   
@@ -220,7 +220,7 @@
   
           <ul class="list-unstyled" style="font-size: 14px;">
             <li>
-              <a href="https://www.facebook.com/groups/3515220102102074" class = "hov">Facebook</a>
+              <a href="#" class = "hov">Facebook</a>
             </li>
             <li>
               <a href="#" class = "hov">Instagram</a>
@@ -249,7 +249,7 @@
     <!-- Copyright -->
     <div class="footer-copyright text-center py-1" style=" background-color: cyan; background-image: linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.6))">
     <p style = "font-weight: bold;">&copy; <span id = "currentYear" > 2023 </span> Copyright: 
-      <a href="/">Ozaramba Foundation</a>
+      <a href="/">Amber & Duquays Foundation</a>
       </p>
     </div>
     <!-- Copyright -->
@@ -268,22 +268,22 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
+  <!--<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+-->
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <!-- Vendor JS Files -->
 <script src="assets/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/aos/aos.js"></script>
-  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/typed.js/typed.umd.js"></script>
-  <script src="assets/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/php-email-form/validate.js"></script>
+  <script src="assets/frame/aos/aos.js"></script>
+  <script src="assets/frame/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/frame/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/frame/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/frame/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/frame/typed.js/typed.umd.js"></script>
+  <script src="assets/frame/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/frame/php-email-form/validate.js"></script>
 
 <script>
       (function () {
@@ -335,4 +335,4 @@ $(document).ready(function() {
 
 </script>
 </body>
-</html><?php /**PATH C:\Users\user\Documents\websites\ozaramba\resources\views/layout.blade.php ENDPATH**/ ?>
+</html><?php /**PATH C:\Users\user\Documents\websites\amber\resources\views\layout.blade.php ENDPATH**/ ?>

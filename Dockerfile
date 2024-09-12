@@ -1,34 +1,19 @@
-# Use an official PHP runtime as a parent image
-FROM php:8.1-fpm
+# Dockerfile
+# Use base image for container
+FROM richarvey/nginx-php-fpm:3.1.6
 
-# Install system dependencies
-RUN apt-get update && apt-get install -y libpng-dev libjpeg-dev libfreetype6-dev libzip-dev unzip git
-
-# Install PHP extensions
-RUN docker-php-ext-configure gd --with-freetype --with-jpeg \
-    && docker-php-ext-install gd \
-    && docker-php-ext-install zip
-
-# Install Composer
-COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
-
-# Set the working directory
-WORKDIR /var/www
-
-# Copy the application code
+# Copy all application code into your Docker container
 COPY . .
 
-# Install PHP dependencies
-RUN composer install --optimize-autoloader --no-dev
+RUN apk update
 
-# Set environment variables
-ENV APP_ENV=production
-ENV APP_DEBUG=false
+# Install the `npm` package
+RUN apk add --no-cache npm
 
-# Expose port 80
-# EXPOSE 80
+# Install NPM dependencies
+RUN npm install
 
-# Start PHP-FPM server
-CMD ["php-fpm"]
+# Build Vite assets
+RUN npm run build
 
-
+CMD ["/start.sh"]

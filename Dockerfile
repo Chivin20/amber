@@ -26,7 +26,7 @@ ENV APP_ENV=production
 ENV APP_DEBUG=false
 
 # Expose port 80
-EXPOSE 80
+# EXPOSE 80
 
 # Start PHP-FPM server
 CMD ["php-fpm"]

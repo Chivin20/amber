@@ -1,23 +1,46 @@
-# Dockerfile
-FROM richarvey/nginx-php-fpm:latest 
+# Use an official PHP runtime as a parent image with Nginx and PHP-FPM support
+FROM php:8.1-fpm
 
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    nginx \
+    git \
+    curl \
+    libpng-dev \
+    libjpeg-dev \
+    libfreetype6-dev \
+    libonig-dev \
+    zip \
+    unzip \
+    libzip-dev
+
+# Install PHP extensions
+RUN docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install gd \
+    && docker-php-ext-install pdo pdo_mysql zip mbstring
+
+# Install Composer
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
+# Set working directory
+WORKDIR /var/www
+
+# Copy application source code
 COPY . .
 
-# Image config
-ENV SKIP_COMPOSER 1
-ENV WEBROOT /var/www/html/public
-ENV PHP_ERRORS_STDERR 1
-ENV RUN_SCRIPTS 1
-ENV REAL_IP_HEADER 1
+# Install PHP dependencies
+RUN composer install --no-dev --optimize-autoloader
 
-# Laravel config
-ENV APP_ENV staging
-ENV APP_DEBUG true
-ENV LOG_CHANNEL stderr
+# Set permissions for Laravel
+RUN chown -R www-data:www-data /var/www \
+    && chmod -R 755 /var/www/storage \
+    && chmod -R 755 /var/www/bootstrap/cache
 
-# Allow composer to run as root
-ENV COMPOSER_ALLOW_SUPERUSER 1
+# Copy Nginx configuration file
+COPY ./nginx/nginx.conf /etc/nginx/nginx.conf
 
-CMD ["/start.sh"]
+# Expose port 80
+EXPOSE 80
 
-
+# Start Nginx and PHP-FPM
+CMD service nginx start && php-fpm

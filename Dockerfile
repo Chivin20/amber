@@ -1,19 +1,23 @@
 # Dockerfile
-# Use base image for container
-FROM richarvey/nginx-php-fpm:3.1.6
+FROM richarvey/nginx-php-fpm:latest 
 
-# Copy all application code into your Docker container
 COPY . .
 
-RUN apk update
+# Image config
+ENV SKIP_COMPOSER 1
+ENV WEBROOT /var/www/html/public
+ENV PHP_ERRORS_STDERR 1
+ENV RUN_SCRIPTS 1
+ENV REAL_IP_HEADER 1
 
-# Install the `npm` package
-RUN apk add --no-cache npm
+# Laravel config
+ENV APP_ENV staging
+ENV APP_DEBUG true
+ENV LOG_CHANNEL stderr
 
-# Install NPM dependencies
-RUN npm install
-
-# Build Vite assets
-RUN npm run build
+# Allow composer to run as root
+ENV COMPOSER_ALLOW_SUPERUSER 1
 
 CMD ["/start.sh"]
+
+

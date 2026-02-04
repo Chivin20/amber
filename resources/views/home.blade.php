@@ -178,7 +178,7 @@ Bootstrap 4 breakpoints
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <div class="col-12" id="banner" style="background-image:linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 1)), url('../assets/img/s1.jpg');">
+                        <div class="col-12" id="banner" style="background-image: url('../assets/img/s1.jpg');">
                             <div class="row">
                                  <div class="col-12">
                                      <div id="banner_left" class = "scrolling-text"> 
@@ -193,7 +193,7 @@ Bootstrap 4 breakpoints
 
                     <div class="carousel-item ">
                    
-                        <div class="col-12" id="banner" style="background-image:linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.9)),url('../assets/img/s2.jpg');"> 
+                        <div class="col-12" id="banner" style="background-image:url('../assets/img/s2.jpg');"> 
                             <div class="row">
                                 <div class="col-12">
                                     <div id="banner_left" class = "scrolling-text">
@@ -211,7 +211,7 @@ Bootstrap 4 breakpoints
 
                <div class="carousel-item ">
                    
-                   <div class="col-12" id="banner" style="background-image:linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.8)),url('../assets/img/s3.jpg');"> 
+                   <div class="col-12" id="banner" style="background-image:url('../assets/img/s3.jpg');"> 
                        <div class="row">
                            <div class="col-8">
                            <div id="banner_left" class = "scrolling-text">

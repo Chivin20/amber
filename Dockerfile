@@ -18,21 +18,28 @@ RUN a2enmod rewrite
 # Set working directory
 WORKDIR /var/www/html
 
-# Copy all project files
-COPY . .
+# Copy composer files first (for faster Docker caching)
+COPY composer.json composer.lock ./
 
-# Install Composer
+# Install Composer globally
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+
+# Install PHP dependencies
 RUN composer install --no-dev --optimize-autoloader
 
-# Set permissions
+# Copy the rest of the project
+COPY . .
+
+# Move public contents to root (Render free tier)
+RUN cp -r public/* ./
+
+# Set proper permissions
 RUN chown -R www-data:www-data /var/www/html \
     && chmod -R 755 /var/www/html/storage \
     && chmod -R 755 /var/www/html/bootstrap/cache
 
-# Point Apache to public folder
-RUN sed -i 's|/var/www/html|/var/www/html/public|g' /etc/apache2/sites-available/000-default.conf
-
+# Expose Apache port
 EXPOSE 80
 
+# Start Apache
 CMD ["apache2-foreground"]
